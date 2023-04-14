@@ -1,0 +1,101 @@
+
+/*TRANSITION TITRE */
+#header h1{
+    transition: transform 0.8s;
+}
+#header h1:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.2);
+     
+  }
+  h1:hover a{box-shadow: 10px 5px 5px #30ade2;}
+
+
+#nav li{
+    transition: transform 0.8s;
+}
+#nav li:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.2);
+    background-color: #30ade2;
+  }
+
+
+  .icon:hover{
+    transform: rotateZ(-20deg);
+  }
+
+h2:hover{
+    animation:  shake 1s  ;
+    }
+    @keyframes shake{
+    0%{
+        transform: translateX(0)
+    }
+    25%{
+    transform: translateX(25px);
+   }
+    
+    50%{
+   transform: translateX(-25px);
+    }
+    100%{
+    transform: translateX(0px);
+   }
+    }
+
+
+    .image img{
+    transform: scaleX(0.7);
+    height: 82.1%;
+    }
+
+    .image{
+        transition: transform .5s;
+    }
+    .image:hover{
+        -ms-transform: scale(1); 
+        -webkit-transform: scale(1); 
+        transform: scale(1.2);
+        filter: contrast(1.1);
+    }
+    /* .inner .image:hover{
+        border: 2px solid #30ade2;
+    } */
+
+
+    .button{ 
+      color: #30ade2;
+      border: solid #0000;
+      border-width: .1em .1em calc(15px + .1em) calc(15px + .1em);
+      background:
+        conic-gradient(at left 15px  bottom 15px,
+          #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+        conic-gradient(at left calc(15px + .1em) bottom calc(15px + .1em),
+          #0000 90deg,#30ade2 0) 0 100%/calc(100% - .1em) calc(100% - .1em)  border-box;
+      transform: translate(calc(15px/-1),15px);
+      clip-path: 
+        polygon(
+        15px 0%, 
+        15px 0%, 
+        100% 0%, 
+        100% calc(100% - 15px),
+        100% calc(100% - 15px),
+        15px calc(100% - 15px)
+        );
+      transition: 0.5s;
+    }
+    .button:hover {
+      transform: translate(0,0);
+      clip-path: 
+        polygon(
+        0% 15px, 
+        15px 0%, 
+        100% 0%, 
+        100% calc(100% - 15px), 
+        calc(100% - 15px) 100%, 
+        0% 100%
+      );
+    }
